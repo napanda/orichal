@@ -93,6 +93,7 @@ canvas {
 h3 {
   text-transform: uppercase;
   margin-top: 40px !important;
+  font-size: 20px !important;
 }
 
 h5 {
@@ -124,6 +125,10 @@ h5 {
 }
 .navbar * {
   color: white !important;
+}
+.navbar-brand {
+  font-size: 30px !important;
+  font-weight: 700;
 }
 .btn-secondary {
   background-color: #4d545a !important;
