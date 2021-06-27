@@ -1,0 +1,150 @@
+body {
+  background-color: #333338 !important;
+}
+body * {
+  color: white;
+}
+.footer {
+  margin-top: 100px;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+#coinList img {
+  max-width: 30px;
+  max-height: 30px;
+}
+a {
+  /* color: inherit; */
+  color: #00f2ff !important;
+  text-decoration: none;
+}
+a:focus,
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}
+.coinData .row {
+  display: flex;
+  margin-top: 20px;
+}
+.coinData .row > div {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.green {
+  color: #00bd00;
+}
+.red {
+  color: #ff1a1a;
+}
+tr {
+  cursor: pointer;
+}
+.doughnut {
+  max-height: 300px;
+}
+.sblIndex div {
+  margin-right: 10px;
+}
+
+.newsRow {
+  padding-bottom: 20px;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+  margin-bottom: 20px;
+}
+
+.newsRow .tag span {
+  padding: 4px 8px;
+  overflow: hidden;
+  min-width: 78px;
+  min-height: 24px;
+  background-color: #fcc117;
+  color: #19284d;
+}
+.newsRow .title {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+}
+.newsRow .desc {
+  font-size: 12px;
+}
+
+.newsRow .desc * {
+  margin-right: 10px;
+}
+.newsRow .desc span:nth-of-type(1) {
+  font-weight: 700;
+}
+
+canvas {
+  max-width: 100%;
+  max-height: 350px;
+}
+h3 {
+  text-transform: uppercase;
+  margin-top: 40px !important;
+}
+
+h5 {
+  font-size: 12px !important;
+}
+.btn {
+  border-radius: 2px !important;
+  margin: 10px;
+}
+.btn-primary {
+  background-color: #fcc017cf !important;
+  border-color: #ca9706 !important;
+  color: black !important;
+}
+.buttonRow {
+  display: flex;
+  justify-content: space-between;
+}
+.buttonRow div {
+  line-height: 52px;
+
+  font-weight: 700;
+  font-size: 16px;
+}
+.navbar {
+  padding: 0 !important;
+  margin-top: 10px;
+  justify-content: space-between !important;
+}
+.navbar * {
+  color: white !important;
+}
+.btn-secondary {
+  background-color: #4d545a !important;
+}
+.modal-content {
+  background-color: #777777 !important;
+}
+.pancakePrice {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.pancakePrice span:nth-of-type(1) {
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  margin-right: 10px;
+}
+.pancakePrice span:nth-of-type(2) {
+  line-height: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .buttonRow {
+    justify-content: left;
+  }
+}
