@@ -9,6 +9,7 @@ body * {
   text-align: center;
   height: 50px;
   line-height: 50px;
+  font-size: 10px;
 }
 #coinList img {
   max-width: 30px;
