@@ -10,11 +10,12 @@ const Header = () => {
   const history = useHistory();
 
   useEffect(() => {
+    console.log("header", isAuthenticated);
     if (localStorage.getItem("login") === "true") {
-      history.push("/user");
       setIsAuthenticated(true);
+      history.push("/user");
     }
-  }, [isAuthenticated]);
+  }, []);
 
   const onAuthLogin = (success) => {
     setIsAuthenticated(success);

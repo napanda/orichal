@@ -6,22 +6,26 @@ import { Table } from "react-bootstrap";
 const CoinList = () => {
   const [coins, setCoins] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const fetchData = async () => {
+    setIsLoading(true);
+    const response = await coinGecko.get("/coins/markets/", {
+      params: {
+        vs_currency: "usd",
+        order: "market_cap_desc",
+        per_page: 10,
+        page: 1,
+        sparkline: "false",
+      },
+    });
+    setCoins(response.data);
+    setIsLoading(false);
+  };
   useEffect(() => {
-    const fetchData = async () => {
-      setIsLoading(true);
-      const response = await coinGecko.get("/coins/markets/", {
-        params: {
-          vs_currency: "usd",
-          order: "market_cap_desc",
-          per_page: 10,
-          page: 1,
-          sparkline: "false",
-        },
-      });
-      setCoins(response.data);
+    fetchData();
+    return () => {
+      setCoins([]);
       setIsLoading(false);
     };
-    fetchData();
   }, []);
 
   return (
